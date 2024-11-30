@@ -30,6 +30,7 @@ body {
     text-align: center;
     max-width: 100%;
     position: relative; /* This is crucial for positioning the loader inside */
+    backdrop-filter: blur(15px);
 }
 
 /* Header Styling */
@@ -102,9 +103,9 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+/*button:hover {
     background-color: #45a049;
-}
+}*/
 
 /* Status Message */
 #loginStatusMessage, #signupStatusMessage {
