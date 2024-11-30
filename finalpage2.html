@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Search - Food Ordering</title>
+    <link rel="stylesheet" href="finalpage2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Explore Your Favorite Restaurant</h1>
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for a restaurant..." onkeyup="searchRestaurant()">
+        </div>
+
+        <!-- Restaurant List -->
+        <div id="restaurantList" class="restaurant-list">
+            <!-- Restaurant 1 -->
+            <div class="restaurant" data-id="1">
+                <div class="restaurant-card">
+                    <img src="images/pizza-w.jpg" alt="Mansi Restro">
+                    <div class="restaurant-details">
+                        <h2>Mansi Restaurent</h2>
+                        <p>Delicious, freshly baked pizzas!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant 2 -->
+            <div class="restaurant" data-id="2">
+                <div class="restaurant-card">
+                    <img src="images/sushi-world.jpg" alt="Country Bite">
+                    <div class="restaurant-details">
+                        <h2>The Country Bite</h2>
+                        <p>Experience the best sushi in town.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant 3 -->
+            <div class="restaurant" data-id="3">
+                <div class="restaurant-card">
+                    <img src="images/burger-king.jpg" alt="Royal Family">
+                    <div class="restaurant-details">
+                        <h2>Royal Family</h2>
+                        <p>Flame-grilled burgers with a twist.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant 4 -->
+            <div class="restaurant" data-id="4">
+                <div class="restaurant-card">
+                    <img src="images/taco-house.jpg" alt="Pizza Hut">
+                    <div class="restaurant-details">
+                        <h2>Pizza Hut</h2>
+                        <p>Spicy tacos and authentic Mexican flavors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Restaurant 5 -->
+            <div class="restaurant" data-id="5">
+                <div class="restaurant-card">
+                    <img src="images/vegan-bistro.jpg" alt="Vegan Bistro">
+                    <div class="restaurant-details">
+                        <h2>Vegan Bistro</h2>
+                        <p>Healthy, plant-based dishes that taste amazing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="finalpage2.js"></script>
+</body>
+</html>
