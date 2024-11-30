@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Website</title>
+    <link rel="stylesheet" href="finalpage1.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2>Welcome to Atarra Foods</h2>
+        <div id="authFormContainer">
+            <div id="authToggle">
+                <button id="loginToggle" class="auth-btn active">Login</button>
+                <button id="signupToggle" class="auth-btn">Sign Up</button>
+            </div>
+            <!-- Loader -->
+            <div id="loader" class="loader" style="display: none;"></div>
+            <!-- Login Form -->
+            <div id="loginForm" class="auth-form">
+                <form id="loginFormAction">
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                    <button type="submit" id="loginBtn">Login</button>
+                    <div id="loginStatusMessage"></div>
+                </form>
+            </div>
+            <!-- Sign Up Form -->
+            <div id="signupForm" class="auth-form" style="display: none;">
+                <form id="signupFormAction">
+                    <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    <input type="password" id="signupPassword" placeholder="Enter your password" required>
+                    <button type="submit" id="signupBtn">Sign Up</button>
+                    <div id="signupStatusMessage"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="finalpage1.js"></script>
+</body>
+</html>
