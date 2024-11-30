@@ -44,9 +44,12 @@ h2 {
 .auth-btn {
     width: 48%;
     padding: 15px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: none;
+   /* background-color: #f0f0f0;*/
+    background: transparent;
+    /*color: #333;*/
+    color: white;
+    border: 1px solid white;
+   /* border: none;*/
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -54,11 +57,11 @@ h2 {
 }
 
 .auth-btn:hover {
-    background-color: #ddd;
+    background-color: white;
 }
 
 .auth-btn.active {
-    background-color: #4CAF50;
+   /* background-color: #4CAF50;*/
     color: white;
     transform: scale(1.05);
 }
@@ -88,8 +91,8 @@ input:focus {
 button {
     width: 100%;
     padding: 14px;
-    background-color: #4CAF50;
-    color: white;
+   /* background-color: #4CAF50;
+    color: white;*/
     font-size: 16px;
     border-radius: 8px;
     border: none;
