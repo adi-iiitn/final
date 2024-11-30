@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.cart-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #e74c3c;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-details {
+    flex: 1;
+    padding: 10px;
+}
+
+.cart-total {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coupon-section {
+    margin: 20px 0;
+}
+
+.coupon-section input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.coupon-section button {
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* New styles for the coupon message */
+.coupon-message {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;
+}
+
+.coupon-message.success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.coupon-message.error {
+    background-color: #e74c3c;
+    color: white;
+}
