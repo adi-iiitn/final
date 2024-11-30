@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="finalpage3.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 id="restaurant-name">Restaurant Menu</h1>
+            <!-- View Cart Button -->
+            <div class="view-cart">
+                <button onclick="redirectToCartPage()">View Cart (<span id="cartCount">0</span>)</button>
+            </div>
+        </header>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for food..." onkeyup="searchMenu()">
+        </div>
+
+        <!-- Food Menu Section -->
+        <div id="food-menu" class="food-menu">
+            <!-- Menu items will be dynamically injected here -->
+        </div>
+    </div>
+
+    <script src="finalpage3.js"></script>
+</body>
+</html>
