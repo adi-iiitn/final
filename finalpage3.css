@@ -1,0 +1,201 @@
+/* General Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818; /* Dark background for a modern feel */
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e74c3c; /* Bold red for attention */
+}
+
+/* Fixed View Cart Button */
+.view-cart {
+    position: fixed; /* Fixed position at the top-right */
+    top: 20px;
+    right: 20px;
+    z-index: 100; /* Ensure it's above other content */
+}
+
+.view-cart button {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.view-cart button:hover {
+    background-color: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Search Bar */
+.search-container {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#searchBar {
+    padding: 15px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    background-color: #2c3e50;
+    color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#searchBar:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+/* Food Menu Section */
+.food-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+    padding-bottom: 60px; /* Add some space at the bottom to prevent overlap with sticky button */
+}
+
+/* Food Item Card */
+.food-item {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.food-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Food Image */
+.food-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.food-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Food Name and Price */
+.food-item h3 {
+    font-size: 22px;
+    color: #ecf0f1;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.food-item .price {
+    font-size: 20px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Add to Cart Button */
+.food-item button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.food-item button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+.food-item button i {
+    margin-right: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .food-menu {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .food-menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on larger mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .food-menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on 480px screens */
+    }
+
+    .view-cart button {
+        padding: 10px 18px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 460px) {
+    .food-menu {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row on 460px screens */
+    }
+
+    #searchBar {
+        width: 100%;
+    }
+}
